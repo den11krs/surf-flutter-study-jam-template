@@ -13,9 +13,9 @@
 Пару скриншотов экрана авторизации:
 
 <p align="center">
-<img src="./docs/results/task1_1.jpg" width="400" alt="UI screen 1" />
+<img src="./task1_1.jpg" width="400" alt="UI screen 1" />
 </p>
 
 <p align="center">
-<img src="./docs/results/task1_2.jpg" width="400" alt="UI screen 2" />
+<img src="./task1_2.jpg" width="400" alt="UI screen 2" />
 </p>
