@@ -9,6 +9,10 @@ void main() async {
   runApp(const MyApp());
 }
 
+class AppColors {
+  static const appMainColor = 0xFF006e17;
+}
+
 /// App,s main widget.
 class MyApp extends StatelessWidget {
   /// Constructor for [MyApp].
@@ -17,6 +21,17 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        colorScheme: ThemeData().colorScheme.copyWith(
+              primary: const Color(AppColors.appMainColor),
+              secondary: Colors.yellow,
+            ),
+        textSelectionTheme: const TextSelectionThemeData(
+          cursorColor: Color(AppColors.appMainColor),
+          selectionColor: Color(AppColors.appMainColor),
+          selectionHandleColor: Color(AppColors.appMainColor),
+        ),
+      ),
       home: AuthScreen(
         authRepository: AuthRepository(StudyJamClient()),
       ),
